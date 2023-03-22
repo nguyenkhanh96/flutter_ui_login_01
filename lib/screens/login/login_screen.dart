@@ -24,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         alignment: AlignmentDirectional.topCenter,
         children: [
@@ -163,17 +164,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(fontSize: 12, color: Colors.white),
                         ),
                       ),
-                      const SizedBox(
-                        height: 183,
-                      ),
-                      const Text(
-                        "or connect with",
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0XFF7A7A7A),
-                        ),
-                      )
                     ],
                   ),
                 ),
@@ -185,7 +175,18 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 650,
+                  height: 589,
+                ),
+                const Text(
+                  "or connect with",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0XFF7A7A7A),
+                  ),
+                ),
+                const SizedBox(
+                  height: 25,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
